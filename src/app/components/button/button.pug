@@ -1,2 +1,5 @@
-mixin button(text)
-    button(class="button")= text
+mixin button(text, small=false, red=false)
+  if red
+    button(class=(small ? 'button button_small button_color_red': 'button button_color_red'))= text
+  else
+    button(class=(small ? 'button button_small' : 'button'))= text
