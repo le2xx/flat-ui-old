@@ -1,0 +1,33 @@
+.button
+  width 118px
+  height 35px
+  font(12, #44ae9f, false, 12)
+  font-family 'Lato Black', sans-serif
+  text-transform uppercase
+  background none
+  border none
+  border-radius 3px
+  outline none
+
+  &::before
+    position absolute
+    z-index -1
+    top 0
+    left 0
+    width 116px
+    height 31px
+    content ''
+    background #fff
+    border 1px solid #4eb7a8
+    border-bottom 3px solid #4eb7a8
+    border-radius 3px
+
+  &:hover::before
+    background #4eb7a8
+    border-color #28a290
+
+  &:hover
+    color #fff
+
+  &:active::before
+    border-color #4eb7a8
