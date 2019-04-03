@@ -1,6 +1,6 @@
 import './styles/base.styl';
-// import { testBlock } from './app/components/test-block/test-block';
+import { button } from './app/components/button/button';
 
 window.onload = () => {
-  // testBlock();
+  button();
 };

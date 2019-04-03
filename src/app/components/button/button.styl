@@ -1,5 +1,6 @@
 .button
   position relative
+  overflow hidden
   width 118px
   height 35px
   font(12, #44ae9f, false, false, 400)
@@ -56,3 +57,16 @@
 
     &:active::before
       border-color #e75735
+
+  &__ripple
+    position absolute
+    margin auto
+    background #fafafa
+    border-radius 50%
+    opacity .3
+    animation ripple .5s linear
+    transform scale(0)
+
+@keyframes ripple
+  to
+    transform scale(2.5)
