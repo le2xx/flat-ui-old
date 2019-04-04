@@ -1,0 +1,31 @@
+.arrow-button
+  padding-left 4px
+  display block
+  width 50px
+  height 50px
+  background #fff
+  border 3px solid #4eb7a8
+  border-radius 50%
+  outline none
+
+  &__icon
+    fill #4eb7a8
+
+  &:hover
+    background #4eb7a8
+
+  &:hover  &__icon
+    fill #fff
+
+  &:disabled
+  &[disabled]
+    background #e5e5e5
+    border-color #e5e5e5
+
+  &:disabled &__icon
+  &[disabled] &__icon
+    fill #fff
+
+  &_arrow_right
+    transform rotate(180deg)
+

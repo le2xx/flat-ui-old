@@ -1,5 +1,6 @@
 extends ../components/layout/layout
 include ../components/button/button
+include ../components/arrow-button/arrow-button
 
 block body
   div.temp
@@ -13,3 +14,9 @@ block body
     br
     br
     +button('button', true, true)
+    br
+    br
+    +arrow-button()
+    br
+    br
+    +arrow-button(true)
