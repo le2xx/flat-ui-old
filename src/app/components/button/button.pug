@@ -1,4 +1,5 @@
-mixin button(text, small=false, red=false)
+mixin button(text, small, red)
+  - small = small || false
   if red
     button(class=(small ? 'button button_small button_color_red': 'button button_color_red'))= text
   else

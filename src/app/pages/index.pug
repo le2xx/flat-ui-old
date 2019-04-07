@@ -1,22 +1,28 @@
 extends ../components/layout/layout
 include ../components/button/button
 include ../components/arrow-button/arrow-button
+include ../components/percentages-chart/percentages-chart
 
 block body
   div.temp
-    +button('button')
+    //+button('button')
     br
     br
-    +button('button', true)
+    //+button('button', true)
     br
     br
-    +button('button', false, true)
+    //+button('button', false, true)
     br
     br
-    +button('button', true, true)
+    //+button('button', true, true)
     br
     br
-    +arrow-button()
+    //+arrow-button()
     br
     br
-    +arrow-button(true)
+    //+arrow-button(true)
+    br
+    br
+    +percentages-chart(10, 'one')
+    +percentages-chart(62, 'two')
+    +percentages-chart(100, 'tree')
