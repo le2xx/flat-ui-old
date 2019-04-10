@@ -6,7 +6,5 @@ import {percentagesChart} from "./app/components/percentages-chart/percentages-c
 window.onload = () => {
   button();
   arrowButton();
-  percentagesChart(10, 'one');
-  percentagesChart(62, 'two');
-  percentagesChart(100, 'tree');
+  percentagesChart();
 };
