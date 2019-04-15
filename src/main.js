@@ -1,8 +1,9 @@
 import './styles/base.styl';
 import {button} from './app/components/button/button';
 import {arrowButton} from './app/components/arrow-button/arrow-button';
-import {percentagesChart} from "./app/components/percentages-chart/percentages-chart";
-import {percentagesPieChart} from "./app/components/percentages-pie-chart/percentages-pie-chart";
+import {percentagesChart} from './app/components/percentages-chart/percentages-chart';
+import {percentagesPieChart} from './app/components/percentages-pie-chart/percentages-pie-chart';
+import { slider } from './app/components/slider/slider'
 
 const chartDate = [
   { percent: 10, color: '#747474' },
@@ -15,4 +16,5 @@ window.onload = () => {
   arrowButton();
   percentagesChart();
   percentagesPieChart('pie1', chartDate);
+  slider();
 };

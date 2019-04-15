@@ -3,24 +3,27 @@ include ../components/button/button
 include ../components/arrow-button/arrow-button
 include ../components/percentages-chart/percentages-chart
 include ../components/percentages-pie-chart/percentages-pie-chart
+include ../components/slider/slider
 
 block body
   div.temp
     //+button('button')
-    br
+    //br
     //+button('button', true)
-    br
+    //br
     //+button('button', false, true)
-    br
+    //br
     //+button('button', true, true)
-    br
+    //br
     //+arrow-button()
-    br
+    //br
     //+arrow-button(true)
-    br
-    br
-    +percentages-chart(10)
-    +percentages-chart(62)
-    +percentages-chart(100)
-    br
+    //br
+    //+percentages-chart(10)
+    //+percentages-chart(62)
+    //+percentages-chart(100)
+    //br
     +percentage-pie-chart('pie1')
+    br
+    +slider()
+
