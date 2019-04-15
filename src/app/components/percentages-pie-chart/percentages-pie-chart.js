@@ -1,15 +1,18 @@
-const percentagesPieChart = (id,  date) => {
+const percentagesPieChart = (id, date) => {
   const chart = document.getElementById(id);
   chart.width = 95;
   chart.height = 95;
   const ctx = chart.getContext("2d");
-  const start = - Math.PI / 2;
-  const end = Math.PI;
-  // drawArc(ctx, 47, 47, 39, start, end, '#4eb7a8');
 
-  date.forEach(el =>
-    drawArc(ctx, 47, 47, 39, start, end, el.color)
-  );
+  let start = -Math.PI / 2;
+
+  drawArc(ctx, 47, 47, 39, start, 2 * Math.PI, '#e5e5e5');
+
+  date.forEach((el) => {
+    const end = start + 2 * Math.PI * el.percent / 100;
+    drawArc(ctx, 47, 47, 39, start, end, el.color);
+    start = end;
+  });
 };
 
 const drawArc = (ctx, centerX, centerY, radius, startAngle, endAngle, color) => {
@@ -21,4 +24,4 @@ const drawArc = (ctx, centerX, centerY, radius, startAngle, endAngle, color) => 
   ctx.closePath();
 };
 
-export { percentagesPieChart };
+export {percentagesPieChart};

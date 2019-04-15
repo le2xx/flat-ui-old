@@ -5,7 +5,7 @@ import {percentagesChart} from "./app/components/percentages-chart/percentages-c
 import {percentagesPieChart} from "./app/components/percentages-pie-chart/percentages-pie-chart";
 
 const chartDate = [
-  { percent: 5, color: '#747474' },
+  { percent: 10, color: '#747474' },
   { percent: 25, color: '#e75735' },
   { percent: 35, color: '#4eb7a8' }
 ];
