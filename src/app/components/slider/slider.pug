@@ -1,5 +1,8 @@
-mixin slider()
+mixin slider(step, val)
+  -
+    step = step || '1'
+    val = val || '0'
   .slider
     span.slider__value 0
-    input(type="range" min="0" max="100" step="1" value="0" class="slider__input")
+    input(type="range" min="0" max="100" step= step value= val class="slider__input")
 

@@ -1,6 +1,11 @@
 const slider = () => {
   const slide = document.querySelector('.slider__input');
   const valNode = document.querySelector('.slider__value');
+  const val = slide.getAttribute('value');
+  const step = slide.getAttribute('step');
+  const firstPosition = val * (slide.offsetWidth / 100);
+  valNode.style.marginLeft = String(firstPosition - (valNode.offsetWidth / 2)) + 'px';
+  valNode.textContent = slide.getAttribute('value');
 
   const position = event => {
     const value = Math.floor(event.offsetX / (slide.offsetWidth / 100));
